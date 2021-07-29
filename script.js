@@ -8,12 +8,12 @@ const color = document.querySelector('#color')
 const text = document.querySelector('p').textContent;
 var btn_boo = true;
 const ogAuthor = author.textContent;
-// var str = 
 
 btn_toggle.onclick = () => {
   // your code here
   const bobo = 630610756 - length.value;
-  console.log(text[0])
+  // console.log(text[0])
+findWhiteSpace(text);
   if(btn_boo == true){
     author.textContent = bobo;
     btn_boo = false;
@@ -25,6 +25,9 @@ btn_toggle.onclick = () => {
   }
 }
 
-
+function findWhiteSpace (s) {
+  console.log(s.indexOf(' ') >=0)
+  return s.indexOf(' ') >= 0;
+}
 
 // more codes for Search and Reset buttons here
